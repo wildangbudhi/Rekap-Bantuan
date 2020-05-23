@@ -18,5 +18,15 @@ class TransaksiBantuanUser extends Model
             Users::class, 
             'id'
         );
+
+        $this->hasMany(
+            'id',
+            DetailBantuanUser::class,
+            'transaksi_bantuan_user_id',
+            [
+                'alias' => 'transaksi_bantuan_user',
+                'reusable' => true, 
+            ]
+        );
     }
 }

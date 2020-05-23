@@ -4,20 +4,10 @@
         'uri': '/',
         'with_auth': false
     ],
-    'invoices': [
-        'title': 'Invoices',
-        'uri': '/invoices',
+    'transaksi': [
+        'title': 'Transaksi',
+        'uri': '/transaksi',
         'with_auth': true
-    ],
-    'about': [
-        'title': 'About',
-        'uri': '/about',
-        'with_auth': false
-    ],
-    'contact': [
-        'title': 'Contact',
-        'uri': '/contact',
-        'with_auth': false
     ]
 ] %}
 

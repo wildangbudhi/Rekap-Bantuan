@@ -39,7 +39,7 @@ class SessionController extends ControllerBase
                 $this->flash->success('Welcome ' . $user->name);
 
                 $this->dispatcher->forward([
-                    'controller' => 'index',
+                    'controller' => 'transaksi',
                     'action'     => 'index',
                 ]);
 
