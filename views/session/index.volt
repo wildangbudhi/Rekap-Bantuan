@@ -29,13 +29,7 @@
         <div class="page-header">
             <h2>Don't have an account yet?</h2>
         </div>
-
-        <p>Create an account offers the following advantages:</p>
-        <ul>
-            <li>Create, track and export your invoices online</li>
-            <li>Gain critical insights into how your business is doing</li>
-            <li>Stay informed about promotions and special packages</li>
-        </ul>
+        <p>Mari berbagi untuk terdampak COVID19</p>
 
         <div class="clearfix center">
             {{ link_to('register', 'Sign Up', 'class': 'btn btn-primary btn-large btn-success') }}
