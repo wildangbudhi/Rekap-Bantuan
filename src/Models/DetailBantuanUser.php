@@ -17,13 +17,21 @@ class DetailBantuanUser extends Model
         $this->belongsTo(
             'transaksi_bantuan_user_id', 
             TransaksiBantuanUser::class, 
-            'id'
+            'id',
+            [
+                'alias' => 'transaksi_bantuan_user',
+                'reusable' => true, 
+            ]
         );
 
         $this->belongsTo(
             'kategori_bantuan_id', 
             KategoriBantuan::class, 
-            'id'
+            'id',
+            [
+                'alias' => 'kategori_bantuan',
+                'reusable' => true, 
+            ]
         );
     }
 }

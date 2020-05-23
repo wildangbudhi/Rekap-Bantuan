@@ -82,11 +82,7 @@ class SecurityPlugin extends Injectable
         }
 
         $privateResources = [
-            // 'companies'    => ['index', 'search', 'new', 'edit', 'save', 'create', 'delete'],
-            // 'products'     => ['index', 'search', 'new', 'edit', 'save', 'create', 'delete'],
-            // 'producttypes' => ['index', 'search', 'new', 'edit', 'save', 'create', 'delete'],
-            // 'invoices'     => ['index', 'profile'],
-            'transaksi'   => ['index']
+            'transaksi'   => [ 'index', 'new', 'delete', 'detail' ]
         ];
         foreach ($privateResources as $resource => $actions) 
         {

@@ -16,7 +16,11 @@ class TransaksiBantuanUser extends Model
         $this->belongsTo(
             'user_id', 
             Users::class, 
-            'id'
+            'id',
+            [
+                'alias' => 'users',
+                'reusable' => true, 
+            ]
         );
 
         $this->hasMany(
@@ -24,7 +28,7 @@ class TransaksiBantuanUser extends Model
             DetailBantuanUser::class,
             'transaksi_bantuan_user_id',
             [
-                'alias' => 'transaksi_bantuan_user',
+                'alias' => 'detail_bantuan_user',
                 'reusable' => true, 
             ]
         );
